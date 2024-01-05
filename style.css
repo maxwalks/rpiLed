@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html {
+    overflow: auto;
+}
+
+.taskbar {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(36,36,36);
+}
+
+.taskbar-logo {
+    height: 50px;
+    border-radius: 150px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.title {
+    position: absolute;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 10px;
+    word-spacing: -2px;
+}
+
+.columns {
+    display: block;
+}
+
+.column-1 {
+    position: absolute;
+    display: block;
+    background-color: rgb(64,111,188);
+    height: 400px;
+    width: 100%;
+    margin-top: 59px;
+}
+
+.list-1 {
+    text-align: center;
+    margin-right: 50px;
+}
+
+.toggle-lights-button {
+    background-color: rgb(94,127,168);
+    border: none;
+    border-radius: 150px;
+    padding: 7px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button-column {
+    display: flex;
+    flex-direction: column;
+}
