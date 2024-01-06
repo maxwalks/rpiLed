@@ -1,6 +1,7 @@
 from requests import request
 from flask import Flask, render_template
 import subprocess
+import time
 
 activate_this_file = "/var/www/html/rpiLed/venv/bin/activate_this.py"
 with open(activate_this_file) as _file:
@@ -13,11 +14,21 @@ def index():
     return render_template('index.html')
 
 @app.route('/toggle-lights/')
-def toggled():
+def toggle_lights():
       import subprocess
-      # Run command
       command = subprocess.run(['uhubctl', '-l', '1-1', '-a', 'toggle'], capture_output=False, text=True)
       return render_template('index.html')
+
+@app.route('/lights-on/')
+def lights_on():
+       subprocess.run(['uhubctl', '-l', '1-1', '-a', '1'], capture_output=False, text=True)
+       return render_template('lights-on.html')
+
+@app.route('/lights-off/')
+def lights_off():
+       subprocess.run(['uhubctl', '-l', '1-1', '-a', '0'], capture_output=False, text=True)
+       return render_template('lights-off.html')
+
 
 
 if __name__ == '__main__':
