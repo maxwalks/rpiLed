@@ -1,3 +1,3 @@
 <?php
-exec("python3 main.py");
+exec("sudo python3 main.py");
 ?>

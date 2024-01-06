@@ -5,4 +5,4 @@ command = subprocess.run(['uhubctl', '-l', '1-1', '-p', '2', '-a', 'toggle'], ca
 
 # Print output
 print("Output:", command.stdout)
-print("Return Code:", command.returncode)
+print("Return Code:", command.returncode) 

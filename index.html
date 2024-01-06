@@ -16,8 +16,16 @@
     <div class="columns">
         <div class="column-1">
             <div class="button-column">
+                <script>
+                    function runPythonScript() {
+                      // Get the path to the Python script.
+                      var pythonScriptPath = "main.py";
+                      // Run the Python script.
+                      subprocess.run(["sudo", "python", pythonScriptPath]);
+                    }
+                  </script>
                 <h3 class="list-1">Lights</h3>
-                <button onclick="window.location.href='/activate.php'" class="toggle-lights-button">Toggle Lights</button>
+                <button onclick="runPythonScript()" class="toggle-lights-button">Toggle Lights</button>
             </div>
         </div>
     </div>
