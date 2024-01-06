@@ -55,6 +55,10 @@ html {
 }
 
 .toggle-lights-button {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
     background-color: rgb(94,127,168);
     border: none;
     border-radius: 150px;

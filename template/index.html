@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control LED</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
 </head>
 <body>
     <div class="taskbar">
-        <img class="taskbar-logo" src="assets/logo.jpg" alt="taskbar-logo">
+        <img class="taskbar-logo" src="{{ url_for('static',filename='assets/logo.jpg') }}" alt="taskbar-logo">
         <div class="title">
             <h1>rpiLed</h1>
         </div>
@@ -17,7 +17,7 @@
         <div class="column-1">
             <div class="button-column">
                 <h3 class="list-1">Lights</h3>
-                <button href="/toggle-lights/" data-toggle="tootip" title="toggle-lights" class="toggle-lights-button">Toggle Lights</button>
+                <a href="/toggle-lights/" data-toggle="tootip" title="toggle-lights" class="toggle-lights-button">Toggle Lights</a>
             </div>
         </div>
     </div>
