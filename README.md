@@ -25,7 +25,7 @@ Reboot for the changes to take effect.
 
 ### Install necessary tools
 ```
-sudo apt install git apache2 libapache2-mod-wsgi-py3 pip virtualenv
+sudo apt install git apache2 libapache2-mod-wsgi-py3 pip virtualenv uhubctl
 ```
 Change configuration:
 ```
