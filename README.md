@@ -47,3 +47,29 @@ This is how it should look like:
 ```
 cd /var/www/html && sudo rm index.html && sudo pip install flask && sudo git clone https://github.com/maxwalks/rpiLed.git && cd rpiLed && sudo virtualenv venv
 ```
+
+### autostart Chromium webpage
+Install Chromium:
+```
+sudo apt install chromium-browser -y
+```
+```
+cd .config
+```
+Make the following file:
+```
+sudo mkdir -p lxsession/LXDE-pi
+```
+Edit the following file:
+```
+sudo nano lxsession/LXDE-pi/autostart
+```
+Add this configuration:
+```
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+#@xscreensaver -no-splash
+point-rpi
+@chromium-browser --start-fullscreen --start-maximized http://{Ip address of the pi}
+```
+Reboot for changes to take effect.
