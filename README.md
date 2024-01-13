@@ -48,7 +48,7 @@ This is how it should look like:
 cd /var/www/html && sudo rm index.html && sudo pip install flask && sudo git clone https://github.com/maxwalks/rpiLed.git && cd rpiLed && sudo virtualenv venv
 ```
 
-### autostart Chromium webpage
+## autostart Chromium webpage
 Install Chromium:
 ```
 sudo apt install chromium-browser -y
