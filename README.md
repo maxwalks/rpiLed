@@ -43,9 +43,13 @@ This is how it should look like:
           Allow from all
         </Directory>
 ```
+### Clone Repository
+```
+sudo git clone https://github.com/maxwalks/rpiLed
+```
 ### Install rpiLed
 ```
-cd /var/www/html && sudo rm index.html && sudo pip install flask && sudo git clone https://github.com/maxwalks/rpiLed.git && cd rpiLed && sudo virtualenv venv
+sudo bash run.sh
 ```
 
 ## autostart Chromium webpage
