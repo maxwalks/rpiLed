@@ -3,6 +3,9 @@
 # Config files
 sudo cp config/52-usb.rules /etc/udev/rules.d/
 
+# Add permitted users to dialout group
+sudo usermod -a -G dialout $USER
+
 # Install tools needed
 sudo apt install git apache2 libapache2-mod-wsgi-py3 pip virtualenv uhubctl
 
